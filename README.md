@@ -52,6 +52,7 @@ mitmweb --mode regular --listen-port 8080
 
 ### 6. Trust the CA system-wide
 User-installed certs aren't trusted by apps by default on Android 7+. Installed the mitmproxy CA as a user cert, then used the **MagiskTrustUserCerts** module to make the system trust it the same way it trusts built-in CAs — no need to touch the read-only `/system` partition directly (blocked by dm-verity on this image anyway).
+
 ![CA certificate installed](screenshots/08-ca-cert-installed.png)
 
 ### 7. Redirect traffic to the proxy
